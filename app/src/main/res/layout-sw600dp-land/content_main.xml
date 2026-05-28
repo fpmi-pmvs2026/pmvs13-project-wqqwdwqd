@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:id="@+id/fragmentContainer"
+    android:divider="?android:listDivider"
+    android:orientation="horizontal"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:showDividers="middle"
+    android:weightSum="3"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="ru.yusupov.project.ContactsFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginEnd="16dp" />
+
+    <FrameLayout
+        android:id="@+id/rightPaneContainer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:layout_marginStart="16dp" />
+</LinearLayout>
